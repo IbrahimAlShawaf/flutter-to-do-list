@@ -1,6 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:flutter/src/widgets/container.dart';
-import 'package:flutter/src/widgets/framework.dart';
 import 'package:provider/provider.dart';
 import 'package:todo_list/view_models/app_view_model.dart';
 
@@ -24,11 +22,11 @@ class DeleteBottomSheetView extends StatelessWidget {
                     foregroundColor: viewModel.clrLvl1,
                     backgroundColor: viewModel.clrLvl3,
                     textStyle:
-                        TextStyle(fontWeight: FontWeight.w700, fontSize: 16),
+                        const TextStyle(fontWeight: FontWeight.w700, fontSize: 16),
                     shape: RoundedRectangleBorder(
                         borderRadius: BorderRadius.circular(20))),
-                child: Text("Delete All")),
-            SizedBox(
+                child: const Text("Delete All")),
+            const SizedBox(
               width: 15,
             ),
             ElevatedButton(
@@ -40,10 +38,10 @@ class DeleteBottomSheetView extends StatelessWidget {
                     foregroundColor: viewModel.clrLvl1,
                     backgroundColor: viewModel.clrLvl3,
                     textStyle:
-                        TextStyle(fontWeight: FontWeight.w700, fontSize: 16),
+                        const TextStyle(fontWeight: FontWeight.w700, fontSize: 16),
                     shape: RoundedRectangleBorder(
                         borderRadius: BorderRadius.circular(20))),
-                child: Text("Delete Completed")),
+                child: const Text("Delete Completed")),
           ],
         ),
       );

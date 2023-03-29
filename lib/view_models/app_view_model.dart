@@ -5,12 +5,12 @@ import '../models/user_model.dart';
 
 class AppViewModel extends ChangeNotifier {
   List<Task> tasks = <Task>[];
-  User user = User("Jon Snow");
+  User user = User("Ibrahim AlShawwaf");
 
-  Color clrLvl1 = Colors.grey.shade50;
-  Color clrLvl2 = Colors.grey.shade200;
-  Color clrLvl3 = Colors.grey.shade800;
-  Color clrLvl4 = Colors.grey.shade900;
+  Color clrLvl1 = Colors.indigo.shade50;
+  Color clrLvl2 = Colors.indigo.shade200;
+  Color clrLvl3 = Colors.indigo.shade800;
+  Color clrLvl4 = Colors.indigo.shade900;
 
   int get numTasks => tasks.length;
 
@@ -59,7 +59,7 @@ class AppViewModel extends ChangeNotifier {
   void bottomSheetBuilder(Widget bottomSheetView, BuildContext context) {
     showModalBottomSheet(
         shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(40)),
-        clipBehavior: Clip.antiAliasWithSaveLayer,
+        clipBehavior: Clip.antiAlias,
         context: context,
         builder: ((context) {
           return bottomSheetView;

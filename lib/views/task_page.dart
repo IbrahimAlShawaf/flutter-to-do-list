@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:flutter/src/widgets/container.dart';
-import 'package:flutter/src/widgets/framework.dart';
+
 import 'package:todo_list/views/add_task_view.dart';
 import 'package:todo_list/views/header_view.dart';
 import 'package:todo_list/views/task_info_view.dart';
@@ -15,7 +14,7 @@ class TaskPage extends StatelessWidget {
         body: SafeArea(
           bottom: false,
           child: Column(
-            children: [
+            children: const [
               // Header View
               Expanded(flex: 1, child: HeaderView()),
 

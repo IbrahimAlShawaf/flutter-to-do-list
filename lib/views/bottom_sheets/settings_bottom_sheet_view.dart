@@ -1,10 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:flutter/src/widgets/container.dart';
-import 'package:flutter/src/widgets/framework.dart';
 import 'package:provider/provider.dart';
 import 'package:todo_list/view_models/app_view_model.dart';
 
-import '../../models/task_model.dart';
 
 class SettingsBottomSheetView extends StatelessWidget {
   const SettingsBottomSheetView({super.key});
@@ -31,7 +28,7 @@ class SettingsBottomSheetView extends StatelessWidget {
                       Navigator.of(context).pop();
                     },
                     decoration: InputDecoration(
-                        contentPadding: EdgeInsets.only(bottom: 5),
+                        contentPadding: const EdgeInsets.only(bottom: 5),
                         filled: true,
                         fillColor: viewModel.clrLvl2,
                         border: OutlineInputBorder(
